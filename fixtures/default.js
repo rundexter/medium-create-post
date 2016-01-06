@@ -63,7 +63,13 @@ module.exports = _.merge({
              */
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                VAR1: 'foo'
+                "authorId": "19d225904cefbecfcb290ed2eb59d8cafa832c84af70aef1bcd326b60f9975262",
+                "title": "Liverpool FC",
+                "contentFormat": "html",
+                "content": "<h1>Liverpool FC</h1><p>You’ll never walk alone.</p>",
+                "canonicalUrl": "http://jamietalbot.com/posts/liverpool-fc",
+                "tags": ["football", "sport", "Liverpool"],
+                "publishStatus": "public"
             }
         }
     }
