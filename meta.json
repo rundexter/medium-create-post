@@ -3,83 +3,49 @@
  */
 {
     //Required. Inputs the module expects.
-    "inputs": [
-        {
-            "id": "authorId",
-            "title":"Author ID"
-        },
-        {
-            "id": "title",
-            "title":"Title"
-        },
-        {
-            "id": "contentFormat",
-            "title":"Format"
-        },
-        {
-            "id": "content",
-            "title":"Content"
-        },
-        {
-            "id": "tags",
-            "title":"Tags"
-        },
-        {
-            "id": "canonicalUrl",
-            "title":"Canonical URL"
-        },
-        {
-            "id": "publishStatus",
-            "title":"Status"
-        },
-        {
-            "id": "license",
-            "title":"License"
-        }
-    ],
+    "inputs": [{
+        "id": "title",
+        "title":"Title"
+    }, {
+        "id": "contentFormat",
+        "title":"Format"
+    }, {
+        "id": "content",
+        "title":"Content"
+    }, {
+        "id": "tags",
+        "title":"Tags"
+    }, {
+        "id": "canonicalUrl",
+        "title":"Canonical URL"
+    }, {
+        "id": "publishStatus",
+        "title":"Status"
+    }, {
+        "id": "license",
+        "title":"License"
+    }],
     //Required. Outputs the module emits.
-    "outputs": [
-        {
-            "id": "id",
-            "title":"Post ID"
-        },
-        {
-            "id": "title",
-            "title":"Title"
-        },
-        {
-            "id": "authorId",
-            "title":"Author ID"
-        },
-        {
-            "id": "tags",
-            "title":"Tags"
-        },
-        {
-            "id": "url",
-            "title":"URL"
-        },
-        {
-            "id": "canonicalUrl",
-            "title":"Canonical URL"
-        },
-        {
-            "id": "publishStatus",
-            "title":"Status"
-        },
-        {
-            "id": "publishedAt",
-            "title":"Timestamp"
-        },
-        {
-            "id": "license",
-            "title":"License"
-        },
-        {
-            "id": "licenseUrl",
-            "title":"License URL"
-        }
-    ],
+    "outputs": [{
+        "id": "id",
+        "title":"Post ID"
+    }, {
+        "id": "url",
+        "title":"URL"
+    }, {
+        "id": "canonicalUrl",
+        "title":"Canonical URL"
+    }, {
+        "id": "publishedAt",
+        "title":"Timestamp"
+    }, {
+        "id": "licenseUrl",
+        "title":"License URL"
+    }],
     "icon": "medium",
+    "providers": [{
+      "name": "medium"
+      , "scopes": [ "basicProfile", "publishPost" ]
+    }],
     "title": "Medium: Create Post"
 }
